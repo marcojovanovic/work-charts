@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+body {
+  background: #f4f4f4f4;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  max-width: 1600px;
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+.flex-items {
+  display: flex;
+
+  gap: 2rem;
+  width: 100%;
+}
+
+.btn {
+  background: #47b16f;
+  color: white;
+  outline: none;
+  padding: 0.8rem 1rem;
+  border: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  letter-spacing: 0.2rem;
+}
+
+.btn:hover {
+  background: #639c2a;
+  transform: scale(1.1);
+}
+
+.nav-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.nav {
+  padding: 2rem;
+  width: 100%;
+  background: chocolate;
+  color: white;
+}
+
+.form-input {
+  padding: 0.4rem;
+  padding-left: 1.7rem;
+  border-radius: 10px;
+  color: chocolate;
+  outline: none;
+  width: 40%;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.form-control {
+  position: relative;
+  background: white;
+  padding: 0.5rem;
+}
+
+.form-search {
+  font-size: 1.4rem;
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  border: none;
+}
+
+.github-card {
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+  border-radius: 10px;
+}
+
+.bio-img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.bio-info {
+  flex-direction: column;
+  text-align: left;
+}
+
+.bio-name {
+  text-align: left;
+  color: #992828;
+}
+
+.bio-icon {
+  margin-right: 1.2rem;
+}
+
+.bio-info h3,
+h4 {
+  margin: 1.3rem;
+}
+
+.bio-card {
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 3rem;
+  cursor: pointer;
+  width: 50%;
+  position: relative;
+  border-radius: 10px;
+}
+
+.bio-card::before {
+  content: 'user';
+  position: absolute;
+  top: -35px;
+  left: 0;
+  font-size: 1.1rem;
+  background: white;
+  text-transform: capitalize;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 1.2rem;
+  padding-right: 0.3rem;
+}
+
+.follower-card {
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 3rem;
+  cursor: pointer;
+  width: 50%;
+  position: relative;
+  border-radius: 10px;
+  overflow-y: scroll;
+  height: 400px;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.follower-title {
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.spinner-img {
+  margin-top: 15%;
+  width: 25%;
+}
+
+.err {
+  color: red;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.follower-follower {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 1000;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.bio-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.fusioncharts-container {
+  width: 100% !important;
+}
+
+
+.chart-item {
+  width: 100%;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.github-icon {
+  font-size: 2rem;
+  color: black;
+}
+
+.githubIcon-background {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: red;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.purple-content {
+  background: purple;
+}
+
+.green-content {
+  background: green;
+}
+
+.yellow-content {
+  background: yellow;
+}
+
+.github-card h2 {
+  font-weight: 300;
+}
+
+
+@media only screen and (max-width:1450px){
+
+  .flex{
+    flex-direction: column;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 700px) {
+  .flex-items {
+    display: block;
+    margin: auto;
+  }
+
+  .github-card {
+    width: 100%;
+  }
+
+  .form-search {
+    position: absolute;
+    left: 17% !important;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .bio-card,
+  .follower-card {
+    width: 100%;
+  }
+
+  
+}
