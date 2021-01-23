@@ -11,14 +11,14 @@ function Repos() {
   return (
     <div className="container">
       <div className="flex">
-        <div className="chart-item">
+    { pieData &&  <div className="chart-item">
           <PieChart
             data={pieData}
           />
-        </div>
-        <div className="chart-item">
-          <Column3dChart data={columnData}  />
-        </div>
+        </div>}
+    {columnData && <div className="chart-item">
+    <Column3dChart data={columnData}  />
+        </div> }
       </div>
     </div>
   );
